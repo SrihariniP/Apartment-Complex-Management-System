@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="372.0" prefWidth="502.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="apartmentcomplex.RegisterResidentController">
+   <children>
+      <Text layoutX="42.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register New Resident">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Pane layoutX="16.0" layoutY="74.0" prefHeight="281.0" prefWidth="469.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <VBox layoutX="36.0" layoutY="14.0" prefHeight="200.0" prefWidth="143.0">
+               <children>
+                  <Label text="Resident Name">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Block Number">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Flat Number">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="No of Members ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Mobile Number">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="E-Mail">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="239.0" layoutY="14.0" prefHeight="200.0" prefWidth="186.0">
+               <children>
+                  <TextField fx:id="tName" />
+                  <TextField fx:id="tBlock" />
+                  <TextField fx:id="tFlat" />
+                  <TextField fx:id="tNoOfMembers" />
+                  <TextField fx:id="tMobile" />
+                  <TextField fx:id="tEmail" />
+               </children>
+            </VBox>
+            <Button fx:id="btnAddResident" layoutX="108.0" layoutY="214.0" mnemonicParsing="false" onAction="#handlebtnAddResident" text="Add Resident" />
+            <Button fx:id="btnClear" layoutX="252.0" layoutY="214.0" mnemonicParsing="false" onAction="#handlebtnClear" text="Clear" />
+            <Label fx:id="lblPrint" layoutX="207.0" layoutY="186.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

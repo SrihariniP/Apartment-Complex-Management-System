@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apartmentcomplex.ResidentFXMLController">
+   <children>
+      <Text fill="#277cd9" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resident Login Page">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </Text>
+      <Pane layoutX="39.0" layoutY="81.0" prefHeight="289.0" prefWidth="550.0" style="-fx-background-color: lightgrey;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="81.0">
+         <children>
+            <Button fx:id="btnHome" alignment="CENTER" contentDisplay="RIGHT" layoutX="271.0" layoutY="169.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#handebtnHome" prefHeight="31.0" prefWidth="124.0" text="      Home Page" />
+            <Button fx:id="btnSignIn" layoutX="179.0" layoutY="169.0" mnemonicParsing="false" onAction="#handebtnSignIn" text="Sign In" />
+            <VBox layoutX="106.0" layoutY="66.0" prefHeight="52.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="63.0" text="EMAIL ID" />
+                  <Label prefHeight="23.0" prefWidth="75.0" text="PASSWORD" />
+               </children>
+            </VBox>
+            <VBox layoutX="283.0" layoutY="66.0" prefHeight="52.0" prefWidth="100.0">
+               <children>
+                  <TextField fx:id="tEmail" />
+                  <PasswordField fx:id="tPassword" />
+               </children>
+            </VBox>
+            <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="272.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="D:\Sriharini\VIT\Semester3\CSE1007\DA\home.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnResetPassword" layoutX="215.0" layoutY="237.0" mnemonicParsing="false" onAction="#handlebtnResetPassword" text="Reset Password" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

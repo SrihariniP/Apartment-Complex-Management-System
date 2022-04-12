@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="238.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apartmentcomplex.AdminDashboardController">
+   <children>
+      <Pane layoutX="7.0" layoutY="14.0" prefHeight="40.0" prefWidth="585.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Text fill="#227cd8" layoutX="28.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Admin Dashboard" wrappingWidth="305.4700622558594">
+               <font>
+                  <Font name="Baskerville Old Face" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button fx:id="btnComplaints" layoutX="262.0" layoutY="119.0" mnemonicParsing="false" onAction="#handlebtnComplaints" style="-fx-background-color: lightblue;" text="Complaints" />
+      <Button fx:id="btnRegisterResident" layoutX="431.0" layoutY="119.0" mnemonicParsing="false" onAction="#handlebtnRegisterResident" style="-fx-background-color: lightblue;" text="Register Resident" />
+      <Button fx:id="btnMDefaulters" layoutX="29.0" layoutY="119.0" mnemonicParsing="false" onAction="#handlebtnMDefaulters" style="-fx-background-color: lightblue;" text="Maintenance Defaulters" />
+   </children>
+</AnchorPane>
